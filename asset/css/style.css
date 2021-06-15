@@ -1,0 +1,161 @@
+/*-- this is for webpage restae page desigm --*/
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-family: "Roboto", sans-serif; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif; }
+  ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Roboto", sans-serif; }
+
+a {
+  text-decoration: none;
+  color: #05386B;
+  transition: 0.4s;
+  font-family: "Roboto", sans-serif; }
+
+a:hover {
+  text-decoration: none;
+  color: #05386B; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif; }
+
+body {
+  position: relative;
+  font-family: "Roboto", sans-serif; }
+
+p {
+  margin: 0;
+  padding: 0;
+  color: #323232;
+  font-family: "Roboto", sans-serif; }
+
+/*------------------------
+main code start here 
+-------------------------*/
+body {
+  background-color: #F5F4F4; }
+
+#wrapper {
+  overflow-x: hidden; }
+  #wrapper .main_sidebar {
+    height: 100%;
+    padding: 20px;
+    background-color: #E9E9E9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 95px;
+    overflow-y: scroll;
+    scrollbar-width: none; }
+  #wrapper .main_sidebar::-webkit-scrollbar {
+    display: none; }
+  #wrapper .main_sidebar::-moz-scrollbar {
+    display: none; }
+  #wrapper .main_sidebar::-o-scrollbar {
+    display: none; }
+  #wrapper .main_sidebar::-ms-scrollbar {
+    display: none; }
+  #wrapper .main_wrapper {
+    width: calc(100% - 95px);
+    margin-left: 95px; }
+    #wrapper .main_wrapper .sub_sidebar {
+      width: 300px;
+      min-height: 100vh;
+      float: left;
+      height: 100%;
+      transition: 0.4s; }
+      #wrapper .main_wrapper .sub_sidebar .sub_sidebar_headr {
+        height: 80px;
+        border-bottom: 1px solid #E8E8E8;
+        position: relative; }
+        #wrapper .main_wrapper .sub_sidebar .sub_sidebar_headr .subsidebar_collaspe_btn {
+          height: 30px;
+          width: 30px;
+          background-color: #fff;
+          text-align: center;
+          line-height: 30px;
+          position: absolute;
+          top: 50%;
+          right: -15px;
+          transform: translateY(-50%);
+          cursor: pointer;
+          border-radius: 3px; }
+    #wrapper .main_wrapper .sub_sidebar.toggle {
+      width: 0px; }
+    #wrapper .main_wrapper .main_content_wrapper {
+      width: calc(100% - 300px);
+      margin-left: 300px;
+      min-height: 100vh;
+      border-left: 1px solid #E8E8E8;
+      transition: 0.4s; }
+      #wrapper .main_wrapper .main_content_wrapper .app_header {
+        border-bottom: 1px solid #E8E8E8;
+        height: 80px; }
+      #wrapper .main_wrapper .main_content_wrapper .app_main {
+        min-height: calc(100vh - 160px);
+        max-height: calc(100vh - 160px);
+        padding: 40px;
+        overflow-y: scroll;
+        scrollbar-width: none; }
+      #wrapper .main_wrapper .main_content_wrapper .app_main::-webkit-scrollbar {
+        display: none; }
+      #wrapper .main_wrapper .main_content_wrapper .app_main::-moz-scrollbar {
+        display: none; }
+      #wrapper .main_wrapper .main_content_wrapper .app_main::-o-scrollbar {
+        display: none; }
+      #wrapper .main_wrapper .main_content_wrapper .app_main::-ms-scrollbar {
+        display: none; }
+      #wrapper .main_wrapper .main_content_wrapper .app_footer {
+        border-top: 1px solid #E8E8E8;
+        height: 80px; }
+    #wrapper .main_wrapper .main_content_wrapper.toggle {
+      width: 100%;
+      margin-left: 0px;
+      border-left-color: transparent; }
+
+.main_sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+  .main_sidebar .sidebar_menu_link {
+    margin-top: 30px;
+    text-align: center; }
+    .main_sidebar .sidebar_menu_link ul li {
+      display: block;
+      margin-bottom: 25px; }
+      .main_sidebar .sidebar_menu_link ul li a {
+        font-weight: 600;
+        font-size: 12px;
+        display: block;
+        color: #818181; }
+        .main_sidebar .sidebar_menu_link ul li a i {
+          font-size: 17px;
+          color: #818181;
+          margin-bottom: 6px;
+          transition: 0.4s; }
+        .main_sidebar .sidebar_menu_link ul li a:hover {
+          color: #FF5700; }
+          .main_sidebar .sidebar_menu_link ul li a:hover i {
+            color: #FF5700; }
+    .main_sidebar .sidebar_menu_link ul .active a {
+      color: #FF5700; }
+      .main_sidebar .sidebar_menu_link ul .active a i {
+        color: #FF5700; }
+    .main_sidebar .sidebar_menu_link ul :last-child {
+      margin-bottom: 0px; }
+
+.card {
+  margin-bottom: 40px; }
